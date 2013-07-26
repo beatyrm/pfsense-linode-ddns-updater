@@ -7,11 +7,11 @@
 # 
 
 # define linode details
-$apiKey = "";
+set apiKey = "";
 # https://www.linode.com/api/dns/domain.list
-$domainID = "";
+set domainID = "";
 # https://www.linode.com/api/dns/domain.resource.list
-$resourceID = "";
+set resourceID = "";
 
 # find WAN interface IP substitute dc1 with your specific interface
 set wanIP = `ifconfig dc1 | grep inet | grep -v inet6 | sed 's/.*inet //g' | sed 's/.netmask.*//g'`
